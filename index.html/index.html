@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kiran M | Portfolio</title>
+
+    <link rel="stylesheet" href="Portfolio .css">
+    <script src="Portfolio.js" defer></script>
+</head>
+<body>
+
+    <!-- Background decorations -->
+    <div class="background-design" aria-hidden="true">
+        <div class="circle circle-one"></div>
+        <div class="circle circle-two"></div>
+        <div class="circle circle-three"></div>
+    </div>
+
+    <header>
+        <a href="#home" class="logo">Kiran<span>.M</span></a>
+
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="label">WELCOME TO MY PORTFOLIO</p>
+
+                <h1>Hi, I'm <span>Kiran M.</span></h1>
+
+                <h2>Aspiring Web Developer</h2>
+
+                <p>
+                    I build responsive websites using HTML, CSS,
+                    and JavaScript. I also enjoy programming
+                    with Python and working with SQL databases.
+                </p>
+
+                <div class="actions">
+                    <a href="#projects" class="button">
+                        View Projects →
+                    </a>
+
+                    <a
+                        href="./Kiran_M_Resume_Web_Skills.pdf"
+                        class="button outline"
+                        download="Kiran_M_Resume.pdf">
+                        Download Resume ↓
+                    </a>
+                </div>
+            </div>
+
+            <div class="photo">
+                <div class="photo-frame">
+                    <img src="./k.jpeg" alt="Portrait of Kiran M">
+                </div>
+
+                <p>Learning. Building. Improving.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <p class="label">INTRODUCTION</p>
+            <h2>About Me</h2>
+
+            <div class="card">
+                <p>
+                    I am a fresher interested in web development and
+                    programming. I enjoy learning new technologies,
+                    solving problems, and building useful applications.
+                </p>
+
+                <p>
+                    My technical skills include HTML, CSS, JavaScript,
+                    Python, and SQL. Through practical projects,
+                    I am improving my ability to create responsive
+                    and interactive websites.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <p class="label">MY TOOLKIT</p>
+            <h2>Technical Skills</h2>
+
+            <div
+                id="skillsList"
+                class="skills-list"
+                role="group"
+                aria-label="Choose a technical skill">
+            </div>
+
+            <div
+                id="skillMessage"
+                class="card"
+                aria-live="polite">
+            </div>
+        </section>
+
+        <section id="projects">
+            <p class="label">MY WORK</p>
+            <h2>Projects</h2>
+
+            <label for="projectSearch">Search projects</label>
+
+            <input
+                type="search"
+                id="projectSearch"
+                placeholder="Search by name or technology..."
+            >
+
+            <p id="projectCount" aria-live="polite"></p>
+
+            <div id="projectList" class="project-grid"></div>
+
+            <p id="emptyMessage" hidden>
+                No projects found. Try another search.
+            </p>
+
+            <noscript>
+                Enable JavaScript to view my skills and projects.
+            </noscript>
+        </section>
+
+        <section id="resume">
+            <p class="label">MY QUALIFICATIONS</p>
+            <h2>Resume</h2>
+
+            <div class="card resume-card">
+                <div>
+                    <h3>Kiran M — Resume</h3>
+
+                    <p>
+                        Learn more about my education,
+                        technical skills, and projects.
+                    </p>
+                </div>
+
+                <div class="actions">
+                    <a
+                        href="./Kiran_M_Resume_Web_Skills.pdf"
+                        class="button outline"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        View Resume ↗
+                    </a>
+
+                    <a
+                        href="./Kiran_M_Resume_Web_Skills.pdf"
+                        class="button"
+                        download="Kiran_M_Resume.pdf">
+                        Download Resume ↓
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <p class="label">LET'S CONNECT</p>
+            <h2>Contact Me</h2>
+
+            <div class="contact-grid">
+                <div class="card">
+                    <h3>Email</h3>
+
+                    <a href="mailto:kiranreddy.m2020@gmail.com">
+                        kiranreddy.m2020@gmail.com
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>Phone</h3>
+
+                    <a href="tel:+919113625309">
+                        +91 9113625309
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>Location</h3>
+
+                    <p>
+                        Gudnahalli (V)(P), Anekal,
+                        Bangalore Rural, India
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>LinkedIn</h3>
+
+                    <a
+                        href="https://www.linkedin.com/in/21kiran/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        View My Profile ↗
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Kiran M. All rights reserved.</p>
+    </footer>
+
+    <button
+        id="topButton"
+        type="button"
+        aria-label="Back to top"
+        hidden>
+        ↑ Top
+    </button>
+
+</body>
+</html>
